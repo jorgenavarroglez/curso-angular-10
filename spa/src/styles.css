@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  padding-bottom: 50px;
+}
+
+.main-container{
+	margin-top: 20px;
+}
+
+.activado{
+  text-decoration: none !important;
+  background: #ccc !important;
+}
+
+#nav{
+  padding: 0px;
+  margin: 00px;
+}
+
+#nav ul{
+  margin: 0px;
+  list-style: none;
+  padding-left: 20px;
+}
+
+#nav ul li{
+  float: left;
+  margin-right: 20px;
+}
+
+#nav ul li a{
+  display: block;
+  height: 45px;
+  line-height: 29px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 300ms;
+}
+
+#nav ul li a:hover{
+  text-decoration: none;
+  background: #ccc;
+}
+
+
+
+
+/**animaciones**/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
