@@ -1,0 +1,26 @@
+<h1 class="animated fadeIn">Ficha del Héroe</h1>
+
+<hr/>
+
+<div class="row animated fadeIn">
+
+	<div class="col-md-4">
+		<img src={{heroe.img}} class="img-fluid">
+		<br><br>
+		<a [routerLink]="['/heroes']" class="btn btn-outline-dark btn-block">Volver</a>
+	</div>
+
+	<div class="col-md-8">
+		<h3>{{heroe.nombre | uppercase}}</h3>
+		<hr>
+		<p>
+			{{heroe.bio}}
+			<small>({{heroe.aparicion | date:'y'}})</small>
+		</p>
+		<div>
+			<img *ngIf="heroe.casa == 'Marvel'" src="assets/img/Marvel_logo_2019.png" class="img-fluid">
+			<img *ngIf="heroe.casa == 'DC'" src="assets/img/DC_Comics_logo.png" class="img-fluid" width="200" height="200">
+		</div>
+	</div>
+
+</div>
